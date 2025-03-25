@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Failed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .error-box {
+            background: #ffe6e6;
+            padding: 20px;
+            margin: 20px auto;
+            border: 2px solid #ff3333;
+            border-radius: 8px;
+            width: 60%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .error-title {
+            color: #ff3333;
+            font-size: 24px;
+        }
+        .details {
+            margin-top: 15px;
+        }
+        .details p {
+            font-size: 18px;
+        }
+        a {
+            color: #ff3333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-box">
+        <h1 class="error-title">Payment Failed</h1>
+        <p>We’re sorry, but your payment could not be processed.</p>
+        <div class="details">
+            <p>Possible reasons:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>- Insufficient balance</li>
+                <li>- Network issues</li>
+                <li>- Invalid transaction details</li>
+            </ul>
+        </div>
+        <p>Please try again or contact support if the issue persists.</p>
+        <a href="/">Go Back to Homepage</a>
+    </div>
+</body>
+</html>

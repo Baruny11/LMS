@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .success-box {
+            background: #e6ffe6;
+            padding: 20px;
+            margin: 20px auto;
+            border: 2px solid #33cc33;
+            border-radius: 8px;
+            width: 60%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .success-title {
+            color: #33cc33;
+            font-size: 24px;
+        }
+        .details {
+            margin-top: 15px;
+        }
+        .details p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <h1 class="success-title">Payment Successful!</h1>
+        <p>Thank you for your payment.</p>
+        <div class="details">
+            <p><strong>Transaction ID:</strong> {{ transaction_id }}</p>
+            <p><strong>Amount:</strong> NPR {{ amount }}</p>
+        </div>
+        <a href="/" style="color: #33cc33; text-decoration: underline;">Go to Homepage</a>
+    </div>
+</body>
+</html>
